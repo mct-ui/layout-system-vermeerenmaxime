@@ -26,6 +26,42 @@ html {
  * Customize the background color to match your design.
  */
 
+ /*
+    Objects: Row
+    ---
+    Creates a horizontal row that stretches the viewport and adds padding around children
+*/
+
+
+.o-row {
+    padding:24px 24px 0;
+    display:flow-root;
+}
+
+.o-row--dark{
+    background:rgba(0,0,0,0.8);
+    color:white
+}
+
+.o-row--primary{
+    background:#e85e00;
+    color:white
+}
+
+/*
+    Objects: Container
+    ---
+    Creates a horizontal container that sets de global max-width
+*/
+
+.o-container{
+    max-width:1440px;
+    max-width:90em;
+    margin: 0 auto;
+}
+
+
+
 ::-moz-selection {
     background: #e85e00;
     color: white;
@@ -69,6 +105,9 @@ h1 {
 
 /* Example inline media query */
 @media (min-width: 768px) {
+    .o-row--lg{
+        padding:48px 48px 0;
+    }
     h1 {
         font-size: 58px;
         line-height: 64px;
@@ -188,8 +227,25 @@ a:focus {
 */
 
 .u-max-width-sm {
-    max-width: 36em;
+    max-width: 36em !important;
 }
+
+.u-max-width-md {
+    max-width: 45em !important;
+}
+
+.u-max-width-lg {
+    max-width: 60em !important;
+}
+
+.u-max-width-xl {
+    max-width: 75em !important;
+}
+
+.u-max-width-none {
+    max-width: none !important;
+}
+
 
 /*
     Utility: Utility name
